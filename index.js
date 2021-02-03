@@ -32,7 +32,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'github',
-            message: 'Enter your GitHub Username (Required)',
+            message: 'Enter your GitHub Username. (Required)',
             validate: githubInput => {
                 if (githubInput) {
                     return true;
@@ -46,7 +46,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'email',
-            message: 'Enter your email (Required)',
+            message: 'Enter your email. (Required)',
             validate: emailInput => {
                 if (emailInput) {
                     return true;
@@ -56,11 +56,19 @@ const promptUser = () => {
                     return false;
                 }
             }
-        },
+        }
+    ])
+}
+
+const promptProjectInfo = (readMeData) => {
+    if (!readMeData.projectInfo) {
+        readMeData.projectInfo = [];
+    }
+    return inquirer.prompt([
         {
             type: 'input',
             name: 'title',
-            message: 'Enter your project title (Required)',
+            message: 'Enter your project title. (Required)',
             validate: titleInput => {
                 if (titleInput) {
                     return true;
@@ -70,14 +78,68 @@ const promptUser = () => {
                     return false;
                 }
             }
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Please enter a desciption of your project. (Required)',
+            validate: descriptionInput => {
+                if (descriptionInput) {
+                    return true;
+                }
+                else {
+                    console.log('Please enter your project description.');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'Please enter installation information for your project.'
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Please enter usage information for your project.'
+        },
+        {
+            type: 'input',
+            name: 'contributions',
+            message: 'Please enter contribution information for your project.'
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Please enter testing information for your project.'
+        },
+        {
+            type: 'checkbox',
+            name: 'license',
+            message: 'Please choose a license for your project. (Required)',
+            choices: ['one', 'two', 'three'],
+            validate: licenseInput => {
+                if (licenseInput) {
+                    return true;
+                }
+                else {
+                    console.log('Please choose a project license.');
+                    return false;
+                }
+            }
         }
     ])
+    .then(projectInfo => {
+        readMeData.projectInfo.push(projectInfo);
+        return readMeData;
+    })
 }
-    
+
 promptUser()
-    .then(aboutData => {
-        console.log(aboutData);
-        generateReadMe(aboutData);
+    .then(promptProjectInfo)
+    .then(readMeData => {
+        console.log(readMeData);
+        //generateReadMe(readMeData);
     });
 
 

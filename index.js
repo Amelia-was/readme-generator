@@ -139,7 +139,7 @@ promptUser()
     .then(promptProjectInfo)
     .then(readMeData => {
         console.log(readMeData);
-        //generateReadMe(readMeData);
+        generateReadMe(readMeData);
     });
 
 

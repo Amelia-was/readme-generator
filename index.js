@@ -62,7 +62,7 @@ const promptUser = () => {
 
 const promptProjectInfo = (readMeData) => {
     if (!readMeData.projectInfo) {
-        readMeData.projectInfo = [];
+        readMeData.projectInfo = {};
     }
     return inquirer.prompt([
         {
@@ -130,7 +130,7 @@ const promptProjectInfo = (readMeData) => {
         }
     ])
     .then(projectInfo => {
-        readMeData.projectInfo.push(projectInfo);
+        readMeData.projectInfo = projectInfo;
         return readMeData;
     })
 }

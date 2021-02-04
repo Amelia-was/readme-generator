@@ -4,22 +4,29 @@ const templateReadMe = (templateData) => {
         console.log("========");
         console.log(projectInfo);
     return `
-# ${projectInfo[0].title}
+# ${projectInfo.title}
 
 ## Description
-${projectInfo[0].description}
+${projectInfo.description}
+
+# Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Contributions](#contributions)
+4. [Tests](#tests)
+5. [Questions](#questions)
 
 ## Installation
-${projectInfo[0].installation}
+${projectInfo.installation}
 
 ## Usage
-${projectInfo[0].usage}
+${projectInfo.usage}
 
 ## Contributions
-${projectInfo[0].contributions}
+${projectInfo.contributions}
 
 ## Tests
-${projectInfo[0].tests}
+${projectInfo.tests}
 
 ## Questions
 For additional questions, contact ${about.name}:

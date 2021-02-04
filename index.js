@@ -114,10 +114,10 @@ const promptProjectInfo = (readMeData) => {
             message: 'Please enter testing information for your project.'
         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: 'Please choose a license for your project. (Required)',
-            choices: ['one', 'two', 'three'],
+            choices: ['Apache 2.0', 'GNU GPL v3', 'Mozilla Public License 2.0', 'MIT' ],
             validate: licenseInput => {
                 if (licenseInput) {
                     return true;

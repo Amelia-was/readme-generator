@@ -13,7 +13,24 @@ const appendLicense = (license) => {
 }
 
 const getLicenseDescription = (license) => {
-    let description = 'it\'s a license description, Charlie Brown';
+    let url = '';
+    
+    switch (license) {
+        case 'Apache 2.0':
+            url = '(https://www.apache.org/licenses/LICENSE-2.0)';
+            break;
+        case 'GNU GPL v3':
+            url = '(https://www.gnu.org/licenses/gpl-3.0.en.html)';
+            break;
+        case 'Mozilla Public License 2.0':
+            url = '(https://www.mozilla.org/en-US/MPL/)';
+            break;
+        case 'MIT':
+            url = '(https://opensource.org/licenses/MIT)';
+            break;
+    }
+
+    let description = `Under the ${license}, this material is free to modify and distribute for commercial or private use. See [here]${url} for more details.`;
 
     return description;
 }

@@ -117,7 +117,7 @@ const promptProjectInfo = (readMeData) => {
             type: 'list',
             name: 'license',
             message: 'Please choose a license for your project. (Required)',
-            choices: ['Apache 2.0', 'GNU GPL v3', 'Mozilla Public License 2.0', 'MIT' ],
+            choices: [ 'Apache 2.0', 'GNU GPL v3', 'Mozilla Public License 2.0', 'MIT' ],
             validate: licenseInput => {
                 if (licenseInput) {
                     return true;

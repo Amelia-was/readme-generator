@@ -2,7 +2,7 @@ const fs = require('fs');
 const templateReadMe = require('./readme-template.js');
 
 const generateReadMe = content => {
-    fs.writeFile('./dist/readmeGEN.md', templateReadMe(content), err => {
+    fs.writeFile('./dist/README-SAMPLE.md', templateReadMe(content), err => {
     if (err) throw err;
     console.log("ReadMe complete!")
     })

@@ -37,15 +37,11 @@ const getLicenseDescription = (license) => {
 
 const templateReadMe = (templateData) => {
         const { projectInfo, ...about } = templateData;
-        console.log(about);
-        console.log("========");
-        console.log(projectInfo);
-
         const { name, github, email } = about;
         const { title, description, installation, usage, contributions, tests, license } = projectInfo;
 
     return `
-# ${title} ![${license}](${appendLicense(license)})
+# ${title}  ![${license}](${appendLicense(license)})
 
 ## Description
 ${description}
@@ -74,6 +70,7 @@ ${tests}
 For additional questions, contact ${name}:
 
 GitHub: [${github}](https://github.com/${github})
+
 Email: ${email}
 
 ### License

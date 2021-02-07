@@ -28,6 +28,7 @@ This is testing information
 For additional questions, contact Jane:
 
 GitHub: [jane-github](https://github.com/jane-github)
+
 Email: jane@email.com
 
 ### License

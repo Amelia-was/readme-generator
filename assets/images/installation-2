@@ -13,21 +13,23 @@ This app is a professional README.md generator. The app is executed from the com
 
 ## Installation
 To install the app, clone the respository above, or download as a .zip file.
+1. In the command line, navigate to the directory containing the downloaded repsitory
+2. Download the inquirer package by typing the following in the command line
+`npm init`
+3. Install inquirer by typing the following in the command line
+`npm install inquirer`
 
 ## Usage
-This is usage information
-
-## Contributions
-This is contribution information
-
-## Tests
-This is testing information
+1. In the root directory of the app, begin creating you README by entering `node index.js` in the command line
+2. Answer the prompts (some are required)
+3. A professional README containing your entered information will be in the /dist folder. You may navigate to it in the command line from the root directory of the app by entering
+`cd dist` 
+`open readme.md`
 
 ## Questions
-For additional questions, contact Jane:
+For additional questions, contact Amelia:
 
-GitHub: [jane-github](https://github.com/jane-github)
-Email: jane@email.com
+GitHub: [amelia-was](https://github.com/amelia-was)
 
 ### License
 Under the MIT license, this material is free to modify and distribute for commercial or private use. See [here](https://opensource.org/licenses/MIT) for more details.

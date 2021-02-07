@@ -1,3 +1,4 @@
+// get url of license badge
 const appendLicense = (license) => {
     // MIT https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge
     // GNU General Public License v3 https://img.shields.io/badge/license-GNU%20GPLv3-yellow?style=for-the-badge
@@ -12,6 +13,7 @@ const appendLicense = (license) => {
     return badge;
 }
 
+// get description of license
 const getLicenseDescription = (license) => {
     let url = '';
     
@@ -35,7 +37,9 @@ const getLicenseDescription = (license) => {
     return description;
 }
 
+// readme template
 const templateReadMe = (templateData) => {
+        // destructure data from index.js
         const { projectInfo, ...about } = templateData;
         const { name, github, email } = about;
         const { title, description, installation, usage, contributions, tests, license } = projectInfo;

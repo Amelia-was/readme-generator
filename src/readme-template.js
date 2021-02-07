@@ -30,7 +30,7 @@ const getLicenseDescription = (license) => {
             break;
     }
 
-    let description = `Under the ${license}, this material is free to modify and distribute for commercial or private use. See [here]${url} for more details.`;
+    let description = `Under the ${license} license, this material is free to modify and distribute for commercial or private use. See [here]${url} for more details.`;
 
     return description;
 }

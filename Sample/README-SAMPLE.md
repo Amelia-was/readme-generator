@@ -1,10 +1,8 @@
 
-# Jane's Project
-
-![MIT](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
+# Jane's Project ![MIT](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
 
 ## Description
-This is a description of my project.
+This is a project description
 
 # Table of Contents
 1. [Installation](#installation)
@@ -15,19 +13,20 @@ This is a description of my project.
 6. [License](#license)
 
 ## Installation
-This is installation information for my project
+This is installation information
 
 ## Usage
-This is usage information for my project
+This is usage information
 
 ## Contributions
-This is contribution information for my project
+This is contribution information
 
 ## Tests
-This is testing information for my project
+This is testing information
 
 ## Questions
-For additional questions, contact Jane Doe:
+For additional questions, contact Jane:
+
 GitHub: [jane-github](https://github.com/jane-github)
 Email: jane@email.com
 

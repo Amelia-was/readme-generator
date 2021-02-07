@@ -1,5 +1,7 @@
 
-# Jane's Project ![MIT](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
+# Jane's Project
+
+![MIT](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
 
 ## Description
 This is a project description

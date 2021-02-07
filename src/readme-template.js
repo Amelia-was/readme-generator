@@ -45,7 +45,9 @@ const templateReadMe = (templateData) => {
         const { title, description, installation, usage, contributions, tests, license } = projectInfo;
 
     return `
-# ${title}  ![${license}](${appendLicense(license)})
+# ${title}
+
+![${license}](${appendLicense(license)})
 
 ## Description
 ${description}
@@ -77,7 +79,7 @@ GitHub: [${github}](https://github.com/${github})
 
 Email: ${email}
 
-### License
+## License
 ${getLicenseDescription(license)}
 `;
 }

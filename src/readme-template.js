@@ -39,8 +39,7 @@ const templateReadMe = (templateData) => {
         const { name, github, email } = about;
         const { title, description, installation, usage, contributions, tests, license } = projectInfo;
 
-    return `
-# ${title}
+    return `# ${title}
 
 [![${license}](${appendLicense(license)})](https://shields.io/)
 

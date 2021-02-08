@@ -1,4 +1,4 @@
-# ReadMe Generator &nbsp;&nbsp;&nbsp;![MIT](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
+# ReadMe Generator &nbsp;&nbsp;&nbsp;[MIT](https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge)
 
 ## Description
 This app is a professional README.md generator. The app is executed from the command line. On installation, the user may navigate to the command line and answer a series of prompts about their application and a professional-quality README file is generated. The generated README contains a project description, license, table of contents, and instructions for installation, usage, contributions, and tests. A sample README created using the app can be found [here](https://github.com/Amelia-was/readme-generator/blob/main/Sample/README-SAMPLE.md).
@@ -33,11 +33,7 @@ To use this app, you must have [node.js](https://nodejs.org/en/) installed. A ba
 `cd dist` 
 `open readme.md`
 
-A video walkthrough of the app is below:
-![Video Walkthrough](./assets/videos/app-walkthrough.mov)
-
-A video walkthrough of the app can be found [here](https://drive.google.com/file/d/15xQhF04VXzDubZdPokXDHdtCxrj9A_-_/view?usp=sharing)
-![Video Walkthrough](./assets/videos/walkthrough.mov)
+A video walkthrough of the app can be found [here](https://drive.google.com/file/d/1Pk2MLovjOEaT5rlejQafj-UpP3Ir4BhO/view?usp=sharing).
 
 ## Questions
 For additional questions, contact Amelia:

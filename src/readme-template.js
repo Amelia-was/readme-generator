@@ -1,10 +1,5 @@
 // get url of license badge
 const appendLicense = (license) => {
-    // MIT https://img.shields.io/badge/license-MIT-yellow?style=for-the-badge
-    // GNU General Public License v3 https://img.shields.io/badge/license-GNU%20GPLv3-yellow?style=for-the-badge
-    // Mozilla Public License 2.0 https://img.shields.io/badge/license-Mozilla%20Public%20License%202.0-yellow?style=for-the-badge
-    // Apache license 2.0 https://img.shields.io/badge/license-Apache%202.0-yellow?style=for-the-badge
-
     // replace spaces in URL
     let licenseURL = license.replace(/ /g, '%20');
 
@@ -47,7 +42,7 @@ const templateReadMe = (templateData) => {
     return `
 # ${title}
 
-![${license}](${appendLicense(license)})
+[${license}](${appendLicense(license)})
 
 ## Description
 ${description}

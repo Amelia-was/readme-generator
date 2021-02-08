@@ -42,7 +42,7 @@ const templateReadMe = (templateData) => {
     return `
 # ${title}
 
-[${license}](${appendLicense(license)})
+[![${license}](${appendLicense(license)})](https://shields.io/)
 
 ## Description
 ${description}

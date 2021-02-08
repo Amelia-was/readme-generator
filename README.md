@@ -33,10 +33,7 @@ To use this app, you must have [node.js](https://nodejs.org/en/) installed. A ba
 `cd dist` 
 `open readme.md`
 
-A video walkthrough of the app is [here](./assets/videos/app-walkthrough.mp4)
-
-A video walkthrough of the app can be found [here](https://drive.google.com/file/d/15xQhF04VXzDubZdPokXDHdtCxrj9A_-_/view?usp=sharing)
-![Video Walkthrough](./assets/videos/walkthrough.mp4)
+A video walkthrough of the app can be found [here](https://drive.google.com/file/d/1Pk2MLovjOEaT5rlejQafj-UpP3Ir4BhO/view?usp=sharing)
 
 ## Questions
 For additional questions, contact Amelia:

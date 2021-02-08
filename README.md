@@ -18,7 +18,7 @@ To use this app, you must have [node.js](https://nodejs.org/en/) installed. A ba
 
 ![Download options](./assets/images/installation-2.png)
 
-2. In the command line, navigate to the directory containing the downloaded repsitory.
+2. In the command line, navigate to the root directory of the downloaded repsitory.
 3. Install inquirer by typing the following in the command line:
 `npm install inquirer`
 
